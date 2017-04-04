@@ -1,0 +1,67 @@
+body{
+    background-color: lightblue;
+}
+#main{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    min-width: 400px;
+    background-color: white;
+}
+
+nav{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    width: auto;
+}
+.menu{
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+
+.news{
+    margin: 10px;
+}
+
+.news__article{
+    margin: 10px;
+
+}
+
+.article__title{
+    font-size: xx-large;
+}
+
+.article__description{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.article__url{
+    color:cornflowerblue;
+    margin: 10px;
+ }
+
+.article__url:hover{
+    color:darkcyan;
+    cursor: pointer;
+}
+
+.article__img{
+    width: 100%;
+}
+
+.article__author{
+    font-size: small;
+}
+
+.article__publishedAt{
+    font-size: small;
+}
