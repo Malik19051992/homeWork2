@@ -6,23 +6,38 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header></header>
-    <div id="main">
-        <nav>
-            <div id="nav-main" class="menu">Гланая</div>
-            <div id="nav-news"  class="menu">Новости</div>
-            <div></div>
-            <div></div>
-        </nav>
-        <div id="news-content">
-
-        </div>
+<header>
+    <nav>
+        <div id="nav-main" class="nav-element">Main</div>
+        <div id="nav-news" class="nav-element">News</div>
+        <div></div>
+        <div></div>
+    </nav>
+</header>
+<div id="main">
+    <div id="main-page">Welcome to my site. I do not know how to fill this page, so I'll write some text and insert some
+        picture. The basic set was done on the "News" tab. <span style="font-weight: bold">Click "Hews" on the navigation panel</span>
+        <img class="article__img" src="resources/poker.png">
     </div>
-    <footer></footer>
-    <script src="Model/newsModel.js"></script>
-    <script src="View/newsViewsCreator.js"></script>
-    <script src="Utils/newsUtils.js"></script>
-    <script src="Controllers/newsController.js"></script>
-    <script src="main.js"></script>
+    <div id="news-content">
+
+    </div>
+    <div id="pagination"></div>
+</div>
+<footer>
+    <div class="footer-block-small">2017 © VH.com</div>
+    <div class="footer-block">All that is written here is not protected. Information is free to spread. You can also use
+        the code, but I doubt that it will be useful to someone. If it's someone reading, I'm really surprised. I'm
+        sorry that took a minute of your life.
+    </div>
+    <div class="footer-block-small"><span style="font-weight:bold ">Useful links</span><br><a
+            href="https://newsapi.org/">News API</a></div>
+    <div class="footer-block-small"><span style="font-weight:bold ">Contacts</span><br/>gv19051992@mail.com</div>
+</footer>
+<script src="drawing/newsDrawing.js"></script>
+<script src="viewsCreator/newsViewsCreator.js"></script>
+<script src="utils/newsUtils.js"></script>
+<script src="controllers/newsController.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

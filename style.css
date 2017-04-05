@@ -1,12 +1,9 @@
-body{
-    background-color: lightblue;
-}
-#main{
+header, #main ,footer{
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
     min-width: 400px;
-    background-color: white;
+    font-family: Arial;
 }
 
 nav{
@@ -15,19 +12,37 @@ nav{
     flex-direction: row;
     background-color: aliceblue;
     width: auto;
+    border-radius: 5px 5px 0 0;
+    font-size: larger;
 }
-.menu{
-    margin: 5px;
-    border-radius: 5px;
+.nav-element{
+    padding: 5px;
+}
+
+.nav-element__active{
+    background-color: rgba(0, 191, 255, 0.3);
 
 }
 
-.menu:hover{
+.nav-element:hover{
     cursor: pointer;
+    background-color: rgba(72, 209, 204, 0.31);
+}
+
+#main{
+
+    background-color: rgba(211, 211, 211, 0.5);
+}
+#news-content{
+
+}
+
+#main-page{
+    padding: 10px;
 }
 
 .news{
-    margin: 10px;
+    padding: 10px;
 }
 
 .news__article{
@@ -64,4 +79,53 @@ nav{
 
 .article__publishedAt{
     font-size: small;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.pagination__page{
+    padding: 5px;
+    border-top: solid gray 1px;
+    border-bottom: solid gray 1px;
+    font-size: large;
+}
+
+.pagination__back{
+    border: solid gray 2px;
+    border-radius: 5px 0 0 5px;
+}
+
+.pagination__next{
+    border: solid gray 2px;
+    border-radius: 0 5px 5px 0;
+}
+
+.pagination__page:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.pagination__active-page{
+    background-color: darkgrey;
+}
+
+footer{
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+}
+
+.footer-block-small{
+    width: 20%;
+    margin: 10px;
+}
+.footer-block{
+    width: 40%;
+    margin: 10px;
 }
